@@ -1,0 +1,44 @@
+/*  Auteur : issu du cours  */
+
+main {
+    margin : 1em;
+    padding : 0.5em;
+}
+
+main h1 {
+    color :white;
+    text-align: center;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    margin:50px auto 0px auto;
+    border:solid 1px grey;
+    padding:20px 10px;
+}
+
+form div {
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+}
+
+form label {
+    color : white;
+}
+
+#bouton {
+    justify-content: center;
+}
+
+#bouton input {
+    width:40%;
+    margin:auto;
+}
+
+input[type="number"] {
+    width:5em;
+}
+
