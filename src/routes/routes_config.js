@@ -6,6 +6,7 @@ import Connexion from "../pages/Connexion/Connexion";
 import Inscription from "../pages/Connexion/Inscription";
 import MdpOublie from "../pages/Connexion/MdpOublie";
 import Home from "../pages/Home/Home";
+import ListeMot from "../pages/ListeMot/ListeMot";
 
 // Composant de configuration des routes
 const routesConfig = createBrowserRouter([
@@ -27,6 +28,10 @@ const routesConfig = createBrowserRouter([
             {
                 path: "mdp-oublie",
                 element: <MdpOublie />,
+            },
+            {
+                path: "mes-mots",
+                element: <ListeMot />,
             },
         ],
     }

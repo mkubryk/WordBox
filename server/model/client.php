@@ -9,23 +9,18 @@ class Client extends objet {
     protected ?string $nomClient;
     protected ?string $prenomClient;
     protected ?string $numTelClient;
-    protected ?string $mel;
     protected ?string $mdp;
     protected ?string $userName;
-    protected ?int $score;
     
      //tableau pour construire le <select> :
     // 1. la valeur de l'attribut name
     // 2. le(s) champ(s) Ã  afficher dans le visuel
     protected static $tableauSelect = array("Client", "userName");
 
-    public function __construct (string $nomClient=null,string $prenomClient=null,string $numTelClient= NULL,string $mdp= NULL,string $userName= NULL,int $score= NULL,string $mel= NULL){
+    public function __construct (string $nomClient=null,string $prenomClient=null,string $mdp= NULL,string $userName= NULL){
         if(!is_null($userName)){
             $this->nomClient =$nomClient;
             $this->prenomClient=$prenomClient;
-            $this->numTelClient =$numTelClient;
-            $this->mel = $mel;
-            $this->score = $score;
             $this->mdp =$mdp;
             $this->userName = $userName;
         }
@@ -36,8 +31,6 @@ class Client extends objet {
 		return $chaine;
 	}
     
-    public static function isAdmin() {return false;}
-
     public static function checkMDP($un, $m) {
         $requetePreparee = "SELECT * FROM Client WHERE userName= '$un' AND mdp='$m'";
         $resultat = connexion::pdo()->prepare($requetePreparee);
@@ -72,11 +65,6 @@ class Client extends objet {
             $idClient = static::getClient($login)->get("numClient");
             $_SESSION["userName"] = $login;
             $_SESSION["mdp"] = $mdp;
-            $_SESSION["isAdmin"] = $classe::isAdmin();
-            $panier = array ("numModeP" => 3 , "numClient" => $idClient);
-            Commande::create($panier);
-            $idCommande = connexion::pdo()->lastInsertId();
-            $_SESSION["numCommande"] = $idCommande;
             controllerClient::displayStart();
         } else {
            include("connexion.php");

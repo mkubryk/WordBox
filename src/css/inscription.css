@@ -2,9 +2,9 @@
 
 .wrapper {
   width: 420px;
-  background: #000;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: white;
+  border: 2px solid whitesmoke;
+  color: #226D68;
   border-radius: 12px;
   padding: 30px 40px;
   box-sizing: border-box;
@@ -24,14 +24,14 @@
   width: 82%;
   background: transparent;
   outline: none;
-  border: 2px solid rgba(255,255,255, .2);
+  border: 2px solid whitesmoke;
   border-radius: 40px;
   font-size: 16px;
-  color: #fff;
+  color: #18534F;
   padding: 20px 45px 20px 20px;
 }
 .input-box input::placeholder{
-  color: #fff;
+  color: #18534F;
 }
 .input-box i{
   position: absolute;
@@ -47,11 +47,11 @@
   margin: -15px 0 15px;
 }
 .souvenir-oublie label input{
-  accent-color: #fff;
+  accent-color: black;
   margin-right: 3px;
 }
 .souvenir-oublie a{
-  color: #fff;
+  color: #18534F;
   text-decoration: none;
 }
 .souvenir-oublie a:hover{
@@ -60,17 +60,25 @@
 .wrapper .btn{
   width: 100%;
   height: 45px;
-  background: #fff;
+  background: white;
   border: none;
   outline: none;
   border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 10px whitesmoke;
   cursor: pointer;
   font-size: 16px;
-  color: #333;
+  color: #18534F;
   font-weight: 600;
+  margin-bottom : 2em;
 }
 .btn a{
   text-decoration: none;
-  color: #333;
+  color: #18534F;
 }
+
+a {
+  color: #D6955B;
+  text-decoration: none;
+}
+a:hover{
+  color: #FEEAA1;}

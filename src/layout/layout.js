@@ -1,25 +1,15 @@
 import { Link, Outlet } from "react-router-dom";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function Layout() {
     return (
         <div id="sidebar">
-            <nav>
-                <ul>
-                    <li>
-                        <Link to={`/connexion`}>Connexion</Link>
-                    </li>
-                    <li>
-                        <Link to={`/inscription`}>Inscription</Link>
-                    </li>
-
-                    <li>
-                        <Link to={`/mdp-oublie`}>Mot de passe oublié</Link>
-                    </li>
-                </ul>
-            </nav>
+            <Header/>
             <div>
                 <Outlet />
             </div>
+            <Footer/>
         </div>
 
 

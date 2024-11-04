@@ -4,19 +4,15 @@ require_once("controller/controllerObjet.php");
 class controllerClient extends controllerObjet {
     
     protected static string $classe = "Client";
-	protected static string $identifiant = "numClient";
+	protected static string $identifiant = "login";
     protected static $champs = array(
         "nomClient" => ["text", "Nom"],
         "prenomClient" => ["text", "Prénom"],
-        "numTelClient" => ["tel", "Numéro de téléphone"],
-        "userName" => ["text", "Pseudo"],
-        "mdp" => ["password", "Mot de passe"],
-        "numCarte" => ["tel", "Numéro de carte"],
-        "CVV" => ["password", "Cryptogramme"],
-        "dateExpire" => ["date", "Date d'expiration"]
+        "login" => ["text", "Pseudo"],
+        "mdp" => ["password", "Mot de passe"]
     );
     
-    public static function displayCreationForm() {
+/*    public static function displayCreationForm() {
         $title= "création client";
 		$champs = static::$champs;
 		$classe= static::$classe;
@@ -33,7 +29,7 @@ class controllerClient extends controllerObjet {
         $title= "connexion client";
         include("connexion.php");
     }  
-
+*/
     public static function disconnect(){
         session_unset();
         session_destroy();

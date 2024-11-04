@@ -8,8 +8,8 @@ require_once("config/connexion.php");
 connexion::connect();
 
 // Actions et objets possibles
-$actions = ["update_paiement", "displayPersonnalise","update","displayCreationFormPate","displayCreationForm_simple","displayCreationFormBis","continue","displayStart","displayStat","displayCreationRecipe","displayAll", "displayOne", "delete", "create", "displayCreationForm", "displayConnectionForm", "connect", "disconnect", "inscrire","displayUpdateForm"];
-$objets = ["objet", "Client", "Gerant", "Mot_sympa", "Traitement_inscription"];
+$actions = ["displayPersonnalise","update","displayCreationForm_simple","displayCreationFormBis","continue","displayStart","displayAll", "displayOne", "delete", "create", "displayCreationForm", "displayConnectionForm", "connect", "disconnect", "inscrire","displayUpdateForm"];
+$objets = ["objet", "Client", "Mot_sympa", "Traitement_inscription"];
 
 // Valeurs par défaut
 $objet = "objet";

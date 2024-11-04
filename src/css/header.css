@@ -6,51 +6,52 @@
 body{
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
-  background-color: #212121;
+  background-color: whitesmoke;
+  color:#18534F;
 }
 
 .Title{
   text-align: center;
+  color: #FEEAA1;
+
 }
   
 .header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-/*  position: fixed; à décommenter si on souhaite que le header 
-soit constamment présent sur l'écran ou non*/
   top: 0;
   left: 0;
   width: 100%;
-  background: #000000;
+  background: #226D68;
   z-index: 100;
 }
 
-.logo_pizza{
-  width: 100px;
+li {
+  list-style-type: none;
 }
 
 .navbar{
   display: flex;
+  flex-direction: row;
 }
 
 .navbar a{
   font-size: 18px;
-  color: #fff;
+  color:  #FEEAA1;
   font-weight: 500;
   text-decoration: none;
   margin: 10px;
   position: relative;
-  font: small-caps bold 20px sans-serif;
 }
+
 .navbar a::before{
   content: '';
   position: absolute;
   top: 100%;
   height: 2px;
-  background-color: #eeba2c;
+  background-color: #D6955B;
   transition : width 0.3s;
 }
 .navbar a:hover::before{
@@ -62,12 +63,7 @@ soit constamment présent sur l'écran ou non*/
     padding: 20px 5%;
 }
 
-.Title {
-    width: 100%;
-    margin-right: 0;
-}
 
-.navbar {
-  flex-direction: column;
-}
+
+
 }

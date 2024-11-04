@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import routesConfig from './routes/routes_config.js';
 import { RouterProvider } from 'react-router-dom';
+
 
 function App() {
   return (

@@ -142,6 +142,5 @@ class objet {
 	
 	
 
-	public function affichable() {return true;}
 }
 ?>

@@ -7,10 +7,6 @@ class session {
         return isset($_SESSION["userName"]);
     }
 
-    public static function adminConnected() {
-        return isset($_SESSION["adminName"]);
-    }
-
     public static function clientConnecting() {
         return isset($_GET["action"]) && $_GET["action"] == "connect";
     }

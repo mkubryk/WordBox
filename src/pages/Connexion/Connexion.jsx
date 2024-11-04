@@ -1,6 +1,7 @@
 
 import React from "react";
 import {Link} from "react-router-dom";
+import '../../css/inscription.css';
 
 function Connexion() {
     return (
@@ -25,7 +26,7 @@ function Connexion() {
                     <div class="souvenir-oublie">
                         <label><input type="checkbox" />Se souvenir de moi</label>
 
-                        <Link to="/connexion">Mot de passe oublié?</Link>
+                        <Link to="/mdp-oublie">Mot de passe oublié?</Link>
 
                     </div>
                     <div class="lien-inscription">
@@ -36,4 +37,4 @@ function Connexion() {
     )
 }
 
-export default Connexion
+export default Connexion;

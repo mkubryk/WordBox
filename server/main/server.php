@@ -1,5 +1,7 @@
 <?php
 // server.php
+header('Access-Control-Allow-Origin: http://localhost:3000');
+
 
 // Enable error reporting for debugging
 error_reporting(E_ALL);
