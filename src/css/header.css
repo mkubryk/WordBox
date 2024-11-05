@@ -1,12 +1,10 @@
 *{
   margin: 0;
   font-family:  "Poppins", Georgia, serif;
+  box-sizing: border-box;
 }
 
 body{
-  justify-content: center;
-  align-items: center;
-  margin: 0;
   background-color: whitesmoke;
   color:#18534F;
 }
@@ -14,32 +12,34 @@ body{
 .Title{
   text-align: center;
   color: #FEEAA1;
-
+  padding: 1em;
 }
   
 .header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
   background: #226D68;
-  z-index: 100;
 }
 
 li {
   list-style-type: none;
 }
-
 .navbar{
   display: flex;
   flex-direction: row;
+  width: 100%;
+  padding:0.2%;
+  background-color: #FEEAA1;
 }
+
+.align-redirect-page{
+  display: flex;
+  flex-direction: row;
+  padding:1em;
+  background-color: #FEEAA1;}
 
 .navbar a{
   font-size: 18px;
-  color:  #FEEAA1;
+ /* color:  #FEEAA1;*/
+ color: #18534F;
   font-weight: 500;
   text-decoration: none;
   margin: 10px;
@@ -58,12 +58,18 @@ li {
   width:100%;
 }
 
+.navbar a:hover{
+color:#226D68}
 @media (max-width: 768px) {
 .header {
-    padding: 20px 5%;
+}
 }
 
+.settings{
+  display: flex;
+  justify-content: flex-end;
+}
 
-
-
+.settings i{
+  padding: 1em;
 }

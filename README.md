@@ -68,3 +68,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Penser à installer les bibliothèques 
+npm install jquery --save
+npm i --save-dev @types/jquery
+
+npm install react-router-dom
+
+## Lancer le server php 
+ Dans C:\Users\melis\OneDrive\Documents\ENSIIE\S1\web\PROJET-1\boite-a-mot\word-box\server\main>
+  php -S localhost:8000
+
+
+##  Bootstrap : 
+npm i bootstrap-icons
+
+npm i bootstrap@5.3.3
+
+## Utilisation APi Wiktionnary 
+
+npm install axios cheerio
+
+npm install browserify-zlib querystring-es3 path-browserify crypto-browserify stream-browserify buffer util url stream-http
+
+
+Penser à rédiger un script bash qui lance les commandes de lancement de l'appli

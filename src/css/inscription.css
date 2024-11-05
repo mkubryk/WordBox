@@ -21,7 +21,7 @@
   margin: 30px 0;
 }
 .input-box input{
-  width: 82%;
+  width: 100%;
   background: transparent;
   outline: none;
   border: 2px solid whitesmoke;
@@ -75,10 +75,10 @@
   text-decoration: none;
   color: #18534F;
 }
-
+/*
 a {
   color: #D6955B;
   text-decoration: none;
 }
 a:hover{
-  color: #FEEAA1;}
+  color: #FEEAA1;} */

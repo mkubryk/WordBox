@@ -7,6 +7,7 @@ import Inscription from "../pages/Connexion/Inscription";
 import MdpOublie from "../pages/Connexion/MdpOublie";
 import Home from "../pages/Home/Home";
 import ListeMot from "../pages/ListeMot/ListeMot";
+import AboutUs from "../pages/AboutUs/AboutUs";
 
 // Composant de configuration des routes
 const routesConfig = createBrowserRouter([
@@ -32,6 +33,10 @@ const routesConfig = createBrowserRouter([
             {
                 path: "mes-mots",
                 element: <ListeMot />,
+            },
+            {
+                path: "about-us",
+                element: <AboutUs />,
             },
         ],
     }
